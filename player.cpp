@@ -1,4 +1,6 @@
 #include "player.h"
+#include <ctime>
+
 
 Player::Player(int idx){
     index = idx;
@@ -20,6 +22,14 @@ bool Player::hasNoCardsLeft(){
     return (bucketSize == 0);
 }
 
+bool Player::hasMahJong(){
+    
+}
+
+bool Player::decidePlay(){
+  srand(time(NULL));
+  return (rand()%2);
+}
 
 
 
