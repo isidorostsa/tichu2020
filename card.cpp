@@ -25,8 +25,13 @@ bool Card::equals(Card otherCard){
 }
 
 bool Card::canBeInCombination(){
+    return (suit == "DRAGON" || suit == "DOG") == false; 
+}
+
+bool Card::canBeInBomb(){
     return true; 
 }
+
 
 
 
