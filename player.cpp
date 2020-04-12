@@ -27,8 +27,8 @@ bool Player::hasMahJong(){
 }
 
 bool Player::decidePlay(){
-  srand(time(NULL));
-  return (rand()%2);
+    srand(time(NULL));
+    return (rand()%2);
 }
 
 
