@@ -23,12 +23,15 @@ bool Player::hasNoCardsLeft(){
 }
 
 bool Player::hasMahJong(){
-    
+    for(int n = 0; n < 14; n++){
+        if(hand.getCard(n).getSuit() == "MAHJONG"){return true;}
+    }
+    return false;
 }
 
 bool Player::decidePlay(){
-  srand(time(NULL));
-  return (rand()%2);
+    srand(time(NULL));
+    return (rand()%2);
 }
 
 
