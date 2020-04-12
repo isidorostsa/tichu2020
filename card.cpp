@@ -16,8 +16,6 @@ string Card::getSuit(){
     return suit;
 }
 
-// allagh blabla
-
 bool Card::hasSuit(string theSuit){
     return suit == theSuit; 
 }
