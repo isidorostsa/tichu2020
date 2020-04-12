@@ -24,3 +24,4 @@ bool Card::hasSuit(string theSuit){
 
 // TODO: Implement here the methods of Card
 //TEST
+// TODO: Implement here the methods of Card
