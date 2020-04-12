@@ -20,4 +20,6 @@ bool Card::hasSuit(string theSuit){
     return suit == theSuit; 
 }
 
+
+
 // TODO: Implement here the methods of Card
