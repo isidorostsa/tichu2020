@@ -1,6 +1,6 @@
 #include "player.h"
 
-void Player::Player(int idx){
+Player::Player(int idx){
     index = idx;
 }
 
