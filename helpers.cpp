@@ -10,5 +10,8 @@ int numberOfPlayersThatHaveNoCardsLeft(Player players[]){
 }
 
 bool lastThreePlayersPassedOrHaveNoCardsLeft(Player players[], int playerTurn){
-    // TODO: Implement this function
+    int count = 0;
+    for(int i = 1; i < 4; i++){
+        if(players[(playerTurn + i) % 4].hasNoCardsLeft || players[(playerTurn + i) % 4].hasStatus("PASSED")) count++;
+    }
 }
