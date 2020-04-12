@@ -9,10 +9,7 @@ void Player::setStatus(string newStatus){
 }
 
 bool Player::hasStatus(string checkStatus){
-    if(status == checkStatus){
-        return true;
-    }
-    return false;
+    return (status == checkStatus);
 }
 
 string Player::getName(){
@@ -20,7 +17,7 @@ string Player::getName(){
 }
 
 bool Player::hasNoCardsLeft(){
-    // Do it at the end
+    return (bucketSize == 0);
 }
 
 
