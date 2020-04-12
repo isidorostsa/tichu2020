@@ -1,3 +1,3 @@
 #include "card.h"
 
-// TODO: Implent here the methods of Card
+// TODO: Implement here the methods of Card
