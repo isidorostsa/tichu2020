@@ -1,6 +1,5 @@
 #include "player.h"
 
-
 // TODO: Implement here the methods of Player
 // Do not implement the methods addCardToHand, removeCardFromHand, addCardsToBucket
 // createHandCombinations, findNumberOfPlayableCombinations, playAnyCombination, play
