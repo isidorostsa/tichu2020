@@ -25,16 +25,11 @@ bool Card::equals(Card otherCard){
 }
 
 bool Card::canBeInCombination(){
-    return (suit == "DRAGON" || suit == "DOG") == false; 
+    return suit != "DRAGON" && suit != "DOG"; 
 }
 
 bool Card::canBeInBomb(){
-    return true; 
+    return suit != "DRAGON" && suit != "DOG" && suit != "PHOENIX" && suit != "MAHJONG"; 
 }
 
-
-
-
-// TODO: Implement here the methods of Card
-//TEST
 // TODO: Implement here the methods of Card
