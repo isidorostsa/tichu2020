@@ -31,3 +31,5 @@ bool Card::canBeInCombination(){
 
 
 // TODO: Implement here the methods of Card
+//TEST
+// TODO: Implement here the methods of Card
