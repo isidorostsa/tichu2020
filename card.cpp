@@ -20,8 +20,16 @@ bool Card::hasSuit(string theSuit){
     return suit == theSuit; 
 }
 
+bool Card::equals(Card otherCard){
+    return suit == otherCard.getSuit() && value == otherCard.getValue();
+}
 
+bool Card::canBeInCombination(){
+    return suit != "DRAGON" && suit != "DOG"; 
+}
 
-// TODO: Implement here the methods of Card
-//TEST
+bool Card::canBeInBomb(){
+    return suit != "DRAGON" && suit != "DOG" && suit != "PHOENIX" && suit != "MAHJONG"; 
+}
+
 // TODO: Implement here the methods of Card
