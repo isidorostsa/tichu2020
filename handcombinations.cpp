@@ -3,6 +3,6 @@
 // TODO: Implement here the method createAllCombinations of Hand
 
 void Hand::createAllCombinations(){
-
+    
 }
 
