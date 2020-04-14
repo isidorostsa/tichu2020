@@ -6,7 +6,7 @@ Player::Player(int idx){
     index = idx;
 }
 
-void Player::setStatus(string newStatus){
+void Player::setStatus(string newStatus = "HASNTPLAYED"){
     status = newStatus;
 }
 
