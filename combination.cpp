@@ -21,5 +21,5 @@ int Combination::getNumberOfCards(){
 }
 
 bool Combination::canBePlayed(Combination last){
-  return numberOfCards == last.getNumberOfCards() && cards[0].getValue() >= last.getValue();
+  return numberOfCards == last.getNumberOfCards() && cards[0].getValue() > last.getValue();
 }
