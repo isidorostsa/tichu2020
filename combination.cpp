@@ -20,6 +20,6 @@ int Combination::getNumberOfCards(){
   return numberOfCards;
 }
 
-bool Combination::canBePlayed(Combination last){
-  return numberOfCards == last.getNumberOfCards() && cards[0].getValue() > last.getValue();
+bool Combination::canBePlayed(Combination last){    //returns true if a combination can be played
+  return (numberOfCards == last.getNumberOfCards()) && (cards[0].getValue() > last.getValue());
 }
