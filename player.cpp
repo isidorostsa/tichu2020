@@ -4,6 +4,9 @@
 
 Player::Player(int idx){
     index = idx;
+    bucketSize = 0;
+    name = "";
+    status = ""; 
 }
 
 void Player::setStatus(string newStatus = "HASNTPLAYED"){
@@ -23,7 +26,7 @@ bool Player::hasNoCardsLeft(){
 }
 
 bool Player::hasMahJong(){
-    for(int n = 0; n < 14; n++){
+    for(int n = 0; n < hand.getCardCount(); n++){
         if(hand.getCard(n).getSuit() == "MAHJONG"){return true;}
     }
     return false;

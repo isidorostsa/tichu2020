@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "algorithm": "cpp",
-        "streambuf": "cpp",
-        "xlocale": "cpp",
-        "xstring": "cpp"
-    }
-}
