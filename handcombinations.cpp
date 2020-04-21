@@ -1,7 +1,7 @@
 #include "hand.h"
 // TODO: Implement here the method createAllCombinations of Hand
 
-void Hand::createAllCombinations(){
+void Hand::createAllCombinations(){ 
     for(int startingIndex = 0; startingIndex < currentNumberOfCards; startingIndex ++){ 
         Combination single = Combination();
         single.addCard(cards[startingIndex]);
@@ -20,10 +20,10 @@ void Hand::createAllCombinations(){
 
 //    for(int i = 0; i < currentNumberOfCards; i++){
 //		for(int j = 0; j < currentNumberOfCards - 1 - i; j++){
-//			if(tempHand[j].getValue() > tempHand[j + 1].getValue()){
-//				Card temp = tempHand[j];
-//				tempHand[j] = tempHand[j + 1];
-//				tempHand[j] = temp; 
+//			if(cards[j].getValue() > cards[j + 1].getValue()){
+//				Card temp = cards[j];
+//				cards[j] = cards[j + 1];
+//				cards[j] = temp; 
 //			}
 //		}
 //	}
