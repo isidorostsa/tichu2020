@@ -22,7 +22,7 @@ string Player::getName(){
 }
 
 bool Player::hasNoCardsLeft(){
-    return (bucketSize == 0);
+    return (hand.getCardCount() == 0);
 }
 
 bool Player::hasMahJong(){
