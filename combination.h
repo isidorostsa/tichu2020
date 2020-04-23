@@ -7,7 +7,7 @@
 using namespace std;
 
 /**
- * Class denoting a combination. Combinations can be SINGLE cards or pairs.
+ * Class denoting a combination. Combinations can be single cards or pairs.
  */
 class Combination
 {

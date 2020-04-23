@@ -97,7 +97,7 @@ public:
 
     /**
      * Creates all the possible combinations of the hand given its cards. There are
-     * two types of combinations: SINGLEs and pairs. Combinations must be put in the
+     * two types of combinations: singles and pairs. Combinations must be put in the
      * table allCombinations.
      *
      * Hint: for each combination, you also have to update the variable allCombinationsSize.
