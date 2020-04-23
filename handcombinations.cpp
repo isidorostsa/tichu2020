@@ -5,7 +5,7 @@ void Hand::createAllCombinations(){
     for(int startingIndex = 0; startingIndex < currentNumberOfCards; startingIndex ++){ 
         Combination SINGLE = Combination();
         SINGLE.addCard(cards[startingIndex]);
-        allCombinations[allCombinationsSize++] = SINGLE;  
+        allCombinations[allCombinationsSize ++] = SINGLE;  
         for(int loopingIndex = startingIndex + 1; loopingIndex < currentNumberOfCards; loopingIndex ++){
             if(cards[startingIndex].getValue() == cards[loopingIndex].getValue()){
                 Combination PAIR = Combination();
