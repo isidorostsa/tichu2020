@@ -3,15 +3,15 @@
 
 void Hand::createAllCombinations(){ 
     for(int startingIndex = 0; startingIndex < currentNumberOfCards; startingIndex ++){ 
-        Combination single = Combination();
-        single.addCard(cards[startingIndex]);
-        allCombinations[allCombinationsSize++] = single;  
+        Combination SINGLE = Combination();
+        SINGLE.addCard(cards[startingIndex]);
+        allCombinations[allCombinationsSize++] = SINGLE;  
         for(int loopingIndex = startingIndex + 1; loopingIndex < currentNumberOfCards; loopingIndex ++){
             if(cards[startingIndex].getValue() == cards[loopingIndex].getValue()){
-                Combination doubles = Combination();
-                doubles.addCard(cards[startingIndex]);
-                doubles.addCard(cards[loopingIndex]);
-                allCombinations[allCombinationsSize++] = doubles; 
+                Combination PAIR = Combination();
+                PAIR.addCard(cards[startingIndex]);
+                PAIR.addCard(cards[loopingIndex]);
+                allCombinations[allCombinationsSize++] = PAIR; 
             }
         }
     }
@@ -28,16 +28,16 @@ void Hand::createAllCombinations(){
 //		}
 //	}
 //	for(int i = 0; i < currentNumberOfCards; i++){
-//        Combination single = Combination();
-//        allCombinations[allCombinationsSize++] = single;
-//        single.addCard(tempHand[i]);
+//        Combination SINGLE = Combination();
+//        allCombinations[allCombinationsSize++] = SINGLE;
+//        SINGLE.addCard(tempHand[i]);
 //        for(int j = 0; j < currentNumberOfCards; j++){
 //            if(tempHand[j].canBeInCombination() == false) continue; 
 //            if(tempHand[i].getValue() == tempHand[j].getValue()){
-//                Combination doubles = Combination();
-//                doubles.addCard(cards[i]);
-//				doubles.addCard(cards[j]);
-//                allCombinations[allCombinationsSize++] = doubles;
+//                Combination PAIR = Combination();
+//                PAIR.addCard(cards[i]);
+//				PAIR.addCard(cards[j]);
+//                allCombinations[allCombinationsSize++] = PAIR;
 //            }
 //        }
 //        
